@@ -1,0 +1,16 @@
+server:
+  port: 8080
+#  address: localhost
+
+spring:
+  boot:
+    admin:
+      monitor:
+        default-retries: 5
+        status-interval: 100
+        status-lifetime: 100
+      server:
+        enabled: true
+
+
+

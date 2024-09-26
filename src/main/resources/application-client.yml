@@ -1,0 +1,38 @@
+spring:
+  boot:
+    admin:
+      client:
+        instance:
+          name: Sample application
+          service-host-type: ip
+        url: http://localhost:8080
+        enabled: true
+        period: 1000
+        auto-registration: true
+server:
+  port: 8088
+management:
+  endpoints:
+      web:
+        exposure:
+          include: "*"
+  endpoint:
+    health:
+      show-details: always
+    logfile:
+      enabled: true
+    env:
+      show-values: always
+    metrics:
+      enabled: true
+    configprops:
+      show-values: always
+  server:
+    port: 8081
+info:
+  app:
+    name: Test name
+    version: 1
+logging:
+  file:
+    name: log/log.txt
